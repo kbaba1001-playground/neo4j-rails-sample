@@ -1,0 +1,25 @@
+version: "3"
+services:
+  db:
+    image: neo4j:3.5.3
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - "/data"
+  web:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - .:/neo4j-rails-sample
+      - "bundle-data:/bundle"
+
+volumes:
+  bundle-data:
+    driver: local
