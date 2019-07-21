@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## DB diagram
 
-Things you may want to cover:
+### ERD
 
-* Ruby version
+![pcec-erd.png](https://storage.googleapis.com/kbaba1001-private/public/pcec-erd.png)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Object diagram
+![pcec-object.png](https://storage.googleapis.com/kbaba1001-private/public/pcec-object.png)
